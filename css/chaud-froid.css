@@ -1,1 +1,21 @@
+table{
+  width: 500px;
+  height: 250px;
+  border : 3px;
+  border-style: solid;
+  border-color: black;
+  border-spacing: 0px;
+  border-right: 0px
+}
 
+td{
+  width: 200px;
+  height:200px;
+  border-left: 0px;
+  border-right:3px;
+  border-top: 0px;
+  border-bottom: 0px;
+  border-style: solid;
+  border-color: black;
+  border-collapse: collapse;
+}
