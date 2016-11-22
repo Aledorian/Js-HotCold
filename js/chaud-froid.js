@@ -7,7 +7,7 @@ function jeu(){
   var distance = Math.abs(x - choix);
 
   if (distance == 0) {
-    document.getElementById('indice').innerHTML = "BRAVOOOOOOO !!!!!!!! YOU WIN !";
+    document.getElementById('indice').innerHTML = "BRAVOOOO !!! YOU WIN !";
     document.getElementById('indice').style.color = 'yellow';
     document.getElementById('input').style.animation="rotation 4s infinite alternate";
   }
