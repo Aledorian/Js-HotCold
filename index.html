@@ -7,15 +7,15 @@
   </head>
 
   <body>
-
-    <table> Do you want to play a game ?
+    <h1>Do you want to play a game ?</h1>
+    <table>
       <tr>
         <td>
-          <p> L'ordinateur choisi un chiffre entre 1 et 100, reussirez vous a le découvrir, ne vous en faîte il n'est pas sadique et vous aiguillera sur la bonne voie.
-          <br><br>
+          <p id="regle"> L'ordinateur choisi un chiffre entre 1 et 100, reussirez vous a le découvrir, ne vous en faîte il n'est pas sadique et vous aiguillera sur la bonne voie.
+          <br><br><br>
           <input type="text" name="nombre" value="" id="input"><br>
-          <br>
-          <button type="button" name="button" onclick=jeu()>Play !</button>
+          <br><br>
+          <button type="button" name="button" onclick=jeu() ondblclick=reset()>Play !</button>
         </td>
         <td id="indice"></td>
       </tr>

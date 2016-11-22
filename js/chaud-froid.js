@@ -7,12 +7,20 @@ function jeu(){
   var distance = Math.abs(x - choix);
 
   if (distance == 0) {
-    alert("BRAVOOOOOOO !!!!!!");
+    document.getElementById('indice').innerHTML = "BRAVOOOOOOO !!!!!!!! YOU WIN !";
+    document.getElementById('indice').style.color = 'yellow';
+    document.getElementById('input').style.animation="rotation 4s infinite alternate";
   }
   else if (distance < 10) {
-    document.getElementById('indice').innerHTML = "chaud";
+    document.getElementById('indice').innerHTML = "CHAUD";
+    document.getElementById('indice').style.color = "#FEA347";
   }
   else {
-    document.getElementById('indice').innerHTML = "froid";
+    document.getElementById('indice').innerHTML = "FROID";
+    document.getElementById('indice').style.color = "#F0FFFF"
   }
+}
+
+function reset(){
+    document.getElementById('input').style.animation = "stop 1s"
 }

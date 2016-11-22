@@ -1,21 +1,59 @@
+body{
+  margin: 0;
+  background-image: url("../images/fond.jpg");
+}
+
+h1{
+    margin-left: 30%;
+    color: white;
+}
+
 table{
-  width: 500px;
-  height: 250px;
+  width: 600px;
+  height: 300px;
   border : 3px;
   border-style: solid;
   border-color: black;
   border-spacing: 0px;
-  border-right: 0px
+  border  : 0px;
+  background-color: transparent; ;
+  margin: auto;
 }
 
 td{
   width: 200px;
   height:200px;
-  border-left: 0px;
-  border-right:3px;
-  border-top: 0px;
-  border-bottom: 0px;
-  border-style: solid;
-  border-color: black;
-  border-collapse: collapse;
+  border: 0px;
+}
+
+button{
+    color: white;
+    background-color: #2D241E ;
+    height: 50px;
+    width: 100px;
+    font-size: 25px;
+    margin-left: 25%;
+}
+p{
+  color: white;
+}
+input{
+  background-color: #EFEFEF;
+  color: black;
+  margin-left: 10%;
+}
+
+#indice{
+  text-align: center;
+  font-size: 28px;
+}
+
+@keyframes rotation {
+  50%{transform: rotate(360deg);}
+  100%{transform: scale(2);}
+}
+
+@keyframes stop {
+  0{transform: rotate(0deg);}
+  100%{transform: scale(1);}
 }
