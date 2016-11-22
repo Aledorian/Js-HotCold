@@ -1,3 +1,4 @@
+console.log("début script JS");
 var x = Math.ceil( 100 * Math.random() );
 
 console.log("random = " + x);
@@ -5,7 +6,7 @@ console.log("random = " + x);
 function jeu(){
   var choix = document.getElementById('input').value;
   var distance = Math.abs(x - choix);
-
+  console.log("nombre choisi = " + choix);
   if (distance == 0) {
     document.getElementById('indice').innerHTML = "BRAVOOOO !!! YOU WIN !";
     document.getElementById('indice').style.color = 'yellow';
@@ -24,3 +25,4 @@ function jeu(){
 function reset(){
     document.getElementById('input').style.animation = "stop 1s"
 }
+console.log("fin du script js");
